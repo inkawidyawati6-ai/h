@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pertanyaan Penting Nih! 🤭</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Library Konfeti untuk efek meriah -->
+    <!-- Library Konfeti -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
 
     <div class="card" id="cardUtama">
         <h1 id="judul">Hai Kamu... ✨</h1>
-        <p id="pesan">Ada satu pertanyaan penting banget nih buat kamu. Dijawab jujur ya, jangan bohong! Wkwk. 🫣</p>
+        <p id="pesan">Ada satu pertanyaan penting banget nih buat kamu. Dijawab jujur ya! Wkwk. 🫣</p>
         <h2 id="pertanyaan">Mau gak jadi alasan di balik senyumku tiap hari? </h2>
         
-        <div class="button-group">
+        <div class="button-group" style="position: relative; height: auto;">
+            <!-- Tombol Mau ukurannya akan makin membesar kalau tombol Enggak diklik -->
             <button id="btnMau" onclick="terimaCinta()">Mau Banget! ❤️</button>
-            <button id="btnEnggak" onmouseover="pindahTombol()">Enggak 😝</button>
+            <button id="btnEnggak" onclick="tolakCinta()">Enggak 😝</button>
         </div>
     </div>
 
